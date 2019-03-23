@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Trivia Game</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <style>
+            .bkgrnd {
+                background-image: url("./assets/images/jnBackground.jpg");
+                border-radius: 0;
+            }
+        </style>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#">Are You Smarter Than a Boy Genius!</a>
+        </nav>
+        <main role="main">
+                <div id="hidden">
+                        <h1 class="center">Directions</h1>
+                        <p>Welcome to America's favorite Quiz Game,</p>
+                        <p>Are you Smarter Than a Boy Genius!</p>
+                        <br>
+                        <p>During this game, you will be answering questions that will test both your Organic Chemistry and Calculus Knowledge!</p>
+                        <p>You will have 1 minute for each question. Input your answer and watch as you realize just how stupi....smart you are! </p>
+                        <button id="exit">Exit</button>
+                 </div>
+            <div class="screen-1">
+                <div class="jumbotron bkgrnd fc-white p_rel">
+                    <div class="container">
+                        <p id="game-question" class="questions"></p>
+                        <div class="row">
+                            <div class="col-lg-4 center">
+                                <br><br><br><br><br><br><br><br>
+                                <ol id="answers" class="fs-2rem di_bk list-style"></ol>
+                                <div class="input_wrapper">
+                                    <input type="number" id="answer" class="h_45 w_100 bc_7 di_bk input_box" />
+                                    <input class="btn btn-mine btn-lg di_bk" type="submit" value="Submit" id="result" role="button">
+                                </div>
+                            </div>
+                            <div class="col-md-4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="screen-2">
+                <div class="jumbotron my-grad-2 fc-dk-gray p_rel">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h1 class="display-3 ss_fs">Congratulations, You made it to the end</h1>
+                                <h2>You have finished my game!</h2>
+                            </div>
+
+                            <div class="col-md-4">
+                                <h3 id="correct"></h3>
+                                <h3 id="incorrect"></h3>
+                                <a id="so" class="btn btn-secondary" href="#" role="button">Play again?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 br-gray">
+                        <p id="solution"></p>
+                    </div>
+                    <div class="col-md-6">
+                        <h1 id="countdown" class="display-3 cd-style ss_fs"></h1>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </main>
+        <footer class="footer">Nickelodeon Please dont sue me!</footer>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <script src="assets/javascript/app.js"></script>
+    </body>
+</html>
