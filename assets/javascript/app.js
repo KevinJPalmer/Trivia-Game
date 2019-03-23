@@ -18,12 +18,7 @@ document.onkeyup = function (event) {
 
 };
 
-$("#hideDirections").click(function() {
-  $("#hidden").slideToggle("slow");
-})
-$("#exit").click(function () {
-  $("#hidden").slideToggle("slow");
-})
+
 
 var n = 60;
 
@@ -53,8 +48,14 @@ function decrement() {
   }
 }
 
-countDown();
 
+$("#hideDirections").click(function() {
+  $("#hidden").slideToggle("slow");
+})
+$("#exit").click(function () {
+  $("#hidden").slideToggle("slow");
+  countDown();
+})
 
 var questions = [
 
